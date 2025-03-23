@@ -26,7 +26,7 @@
 
     .create-form-container{
         width: 80%;
-        height: 70%;
+        height: 72%;
         display: flex;
         justify-content: space-between;
         
@@ -97,7 +97,13 @@
                     height: 100%;
                     color: white;
                     font-family: "Poppins";
+                    cursor: not-allowed;
                 }
+            }
+
+            p{
+                line-height: 1.25;
+                font-size: 0.75rem;
             }
 
             .form-input-fields{
