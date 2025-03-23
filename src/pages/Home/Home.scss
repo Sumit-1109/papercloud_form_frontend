@@ -1,0 +1,136 @@
+.home-page{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .header{
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 22%;
+
+        .headings-container{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .heading h1{
+                font-size: 3rem;
+                padding-bottom: 0.2 5rem;
+            }
+    
+            .subHeading p{
+                font-size: 0.85rem;
+            }
+        }
+
+        button{
+            padding: 10px 40px;
+            line-height: 1;
+            background-color: green;
+            color: white;
+            border: 1px gray solid;
+            border-radius: 5px;
+            outline: none;
+            transition: transform 0.1s ease-in-out;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.01);
+            }
+
+            &:active{
+                transform: scale(0.95);
+            }
+        }
+    }
+
+    .line-separator{
+        border: 1px solid gray;
+        width: 70vw;
+        margin-block: 25px;
+    }
+
+    .forms-list{
+        width: 70vw;
+        height: 65vh;
+        max-height: 65vh;
+        position: relative;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+
+        .forms-heading{
+            position: relative;
+            top: 0%;
+            left: 0%;
+        }
+
+        .all-forms-container{
+            flex: 1;
+            padding-inline: 1%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2%;
+
+            .form-container{
+                width: 20%;
+                height: 20%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10%;
+                border: 0.05px solid black;
+                box-shadow:   2px 2px 2px gray;
+
+                .form-actionButtons{
+                    width: 82%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    button{
+                        width: 30%;
+                        background: none;
+                        outline: none;
+                        border: none;
+                        transition: transform 0.1s ease-in-out;
+                        cursor: pointer;
+                    }
+
+                    button:active{
+                        outline: none;
+                        border: none;
+                        transform: scale(0.95);
+                    }
+
+                    button:hover{
+                        transform: scale(1.05);
+                    }
+
+                    .view{
+                        color: green;
+                    }
+
+                    .edit{
+                        color: blue;
+                    }
+
+                    .delete{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
