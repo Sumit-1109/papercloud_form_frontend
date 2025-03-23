@@ -323,8 +323,9 @@ function Create({ editMode }) {
           </div>
 
           <div className="submit-button">
-            <button>SUBMIT</button>
+            <button onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} >SUBMIT</button>
           </div>
+          <p className={hover ? "hover-active" : ""} >{hover ? "Appears here to submit responses !" : ""}</p>
         </div>
 
         <div className="form-or-input-editor">
