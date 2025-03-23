@@ -19,7 +19,8 @@ function Create({ editMode }) {
   const [inputs, setInputs] = useState([]);
   const [group, setGroup] = useState("None");
   const [expandSections, setExpandSections] = useState({});
-
+  const [hover, setHover] = useState(false);
+ 
   const navigate = useNavigate();
 
   const inputTypes = ["TEXT", "NUMBER", "EMAIL", "PASSWORD", "DATE"];
