@@ -146,6 +146,7 @@ function FormPage() {
                       return (
                       <div key={input.id} className="input-wrapper">
                         <InputField
+                          type={input.type}
                           label={input.title}
                           formPlaceholder={input.placeholder}
                           value={responseData ? responseData.value : ""}
